@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Company>Corsinvest Srl</Company>
+    <Authors>Daniele Corsini</Authors>
+    <Copyright>Corsinvest Srl 2019</Copyright>
+    <Product>Corsinvest for UrBackup Api Client</Product>
+    <AssemblyTitle>Corsinvest for UrBackup Api Client</AssemblyTitle>
+    <Description>Corsinvest for UrBackup Api Client</Description>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Corsinvest/cv4urb-api-dotnet</PackageProjectUrl>
+    <PackageTags>UrBackup;Api,Client;Rest;Corsinvest;</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryType>Github</RepositoryType>
+    <RepositoryUrl>https://github.com/Corsinvest/cv4urb-api-dotnet</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+    <Content Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+</Project>
