@@ -7,12 +7,6 @@ UrBackup Client API .Net
 
 [Nuget Api](https://www.nuget.org/packages/Corsinvest.UrBackup.Api)
 
-# **Donations**
-
-If you like my work and want to support it, then please consider to deposit a donation through **Paypal** by clicking on the next button:
-
-[![paypal](https://www.paypalobjects.com/en_US/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PPM9JHLQLRV2S&item_name=Open+Source+Project&currency_code=EUR&source=url)
-
 ```text
    ______                _                      __
   / ____/___  __________(_)___ _   _____  _____/ /_
@@ -22,6 +16,15 @@ If you like my work and want to support it, then please consider to deposit a do
 
 Corsinvest for UrBackup Api Client  (Made in Italy)
 ```
+
+## Copyright and License
+
+Copyright: Corsinvest Srl
+For licensing details please visit [LICENSE.md](LICENSE.md)
+
+## Commercial Support
+
+This software is part of a suite of tools called cv4pve-tools. If you want commercial support, visit the [site](https://www.corsinvest.it/cv4pve-tools)
 
 ## Main features
 

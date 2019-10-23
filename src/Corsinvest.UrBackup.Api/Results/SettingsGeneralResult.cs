@@ -1,19 +1,13 @@
 ﻿/*
- * This file is part of the cv4urb-api-dotnet https://github.com/Corsinvest/cv4pve-api-dotnet,
- * Copyright (C) 2016 Corsinvest Srl
+ * This file is part of the cv4urb-api-dotnet https://github.com/Corsinvest/cv4urb-api-dotnet,
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * This source file is available under two different licenses:
+ * - GNU General Public License version 3 (GPLv3)
+ * - Corsinvest Enterprise License (CEL)
+ * Full copyright and license information is available in
+ * LICENSE.md which is distributed with this source code.
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * Copyright (C) 2016 Corsinvest Srl	GPLv3 and CEL
  */
 
 using Newtonsoft.Json;
@@ -21,7 +15,7 @@ using System.Collections.Generic;
 
 namespace Corsinvest.UrBackup.Api.Results
 {
-    public partial class SettingsGeneralResult : BaseResult
+    public class SettingsGeneralResult : BaseResult
     {
         [JsonProperty("ONLY_WIN32_BEGIN")]
         public string OnlyWin32Begin { get; set; }
@@ -44,7 +38,7 @@ namespace Corsinvest.UrBackup.Api.Results
         [JsonProperty("settings")]
         public SettingsSettings Settings { get; set; }
 
-        public partial class NavitemsSettings
+        public class NavitemsSettings
         {
             [JsonProperty("clients")]
             public List<Client> Clients { get; set; }
@@ -74,7 +68,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public bool Users { get; set; }
         }
 
-        public partial class Client
+        public class Client
         {
             [JsonProperty("group")]
             public long Group { get; set; }
@@ -92,7 +86,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public bool Override { get; set; }
         }
 
-        public partial class Group
+        public class Group
         {
             [JsonProperty("id")]
             public long Id { get; set; }
@@ -101,7 +95,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public string Name { get; set; }
         }
 
-        public partial class SettingsSettings
+        public class SettingsSettings
         {
             [JsonProperty("ONLY_WIN32_BEGIN")]
             public string OnlyWin32Begin { get; set; }
@@ -416,7 +410,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public string VssSelectComponents { get; set; }
         }
 
-        public partial class AlertScript
+        public class AlertScript
         {
             [JsonProperty("id")]
             public long Id { get; set; }
@@ -428,7 +422,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public List<Param> Params { get; set; }
         }
 
-        public partial class Param
+        public class Param
         {
             [JsonProperty("default_value")]
             public string DefaultValue { get; set; }

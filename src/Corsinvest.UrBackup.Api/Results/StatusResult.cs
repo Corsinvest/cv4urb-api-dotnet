@@ -1,26 +1,20 @@
 ﻿/*
- * This file is part of the cv4urb-api-dotnet https://github.com/Corsinvest/cv4pve-api-dotnet,
- * Copyright (C) 2016 Corsinvest Srl
+ * This file is part of the cv4urb-api-dotnet https://github.com/Corsinvest/cv4urb-api-dotnet,
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * This source file is available under two different licenses:
+ * - GNU General Public License version 3 (GPLv3)
+ * - Corsinvest Enterprise License (CEL)
+ * Full copyright and license information is available in
+ * LICENSE.md which is distributed with this source code.
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * Copyright (C) 2016 Corsinvest Srl	GPLv3 and CEL
  */
 
 using Newtonsoft.Json;
 
 namespace Corsinvest.UrBackup.Api.Results
 {
-    public partial class StatusResult : BaseResult
+    public class StatusResult : BaseResult
     {
         [JsonProperty("admin")]
         public bool Admin { get; set; }
@@ -64,7 +58,7 @@ namespace Corsinvest.UrBackup.Api.Results
         [JsonProperty("status")]
         public StatusClient[] Status { get; set; }
 
-        public partial class ClientDownload
+        public class ClientDownload
         {
             [JsonProperty("id")]
             public long Id { get; set; }
@@ -73,7 +67,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public string Name { get; set; }
         }
 
-        public partial class StatusClient
+        public class StatusClient
         {
             [JsonProperty("client_version_string")]
             public string ClientVersionString { get; set; }
@@ -130,7 +124,7 @@ namespace Corsinvest.UrBackup.Api.Results
             public bool? NoBackupPaths { get; set; }
         }
 
-        public partial class Process
+        public class Process
         {
             [JsonProperty("action")]
             public long Action { get; set; }
